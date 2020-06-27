@@ -20,6 +20,7 @@
 		61B6D0EC5632804D72DFF774 /* libPods-codBo3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C3D91FEC9D30F70A9B57933 /* libPods-codBo3.a */; };
 		99BBA8B9EDFF62C5ADBE9BB6 /* libPods-codBo3-codBo3Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E271926A524A17204995EE60 /* libPods-codBo3-codBo3Tests.a */; };
 		B7838132025D64CA75C34620 /* libPods-codBo3-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1304D498BBB4162A1DC65168 /* libPods-codBo3-tvOS.a */; };
+		FA6D0EA8258246C69349E5F2 /* USSR Army.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38F2FF9DD0DB4D1AB784526D /* USSR Army.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		FBCDD422EA526A42813D1E3D /* Pods-codBo3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-codBo3.debug.xcconfig"; path = "Target Support Files/Pods-codBo3/Pods-codBo3.debug.xcconfig"; sourceTree = "<group>"; };
+		38F2FF9DD0DB4D1AB784526D /* USSR Army.ttf */ = {isa = PBXFileReference; name = "USSR Army.ttf"; path = "../src/assets/fonts/USSR Army.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				9EBADF88BD5DC374553C958D /* Pods */,
+				3258FC4841B846B78AECCD95 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -197,6 +200,15 @@
 			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		3258FC4841B846B78AECCD95 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				38F2FF9DD0DB4D1AB784526D /* USSR Army.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -340,6 +352,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				FA6D0EA8258246C69349E5F2 /* USSR Army.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
