@@ -4,7 +4,7 @@ import {Layout, Container, Logo, Text, Result, Button} from '../../components';
 
 import gameDraw from '../../mocks/game';
 
-import {randomGame} from '../../Utils/sortRandom';
+import {randomGame} from '../../Utils/randomlyDraw';
 
 const Home = () => {
   const [show, setShow] = useState(false);
