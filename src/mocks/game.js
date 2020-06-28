@@ -1,4 +1,4 @@
-const gameDraw = {
+const drawGame = {
   maps: [
     'aquarium',
     'breach',
@@ -19,4 +19,4 @@ const gameDraw = {
   levels: ['recruta', 'regular', 'casca grossa', 'veterano'],
 };
 
-export default gameDraw;
+export default drawGame;
