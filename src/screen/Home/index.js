@@ -2,20 +2,23 @@ import React, {useState} from 'react';
 
 import {Layout, Container, Logo, Text, Result, Button} from '../../components';
 
-import {maps, levels} from '../../mocks/game';
+import gameDraw from '../../mocks/game';
 
 const Home = () => {
-  const [map, setMap] = useState();
-  const [level, setLevel] = useState();
   const [show, setShow] = useState(false);
   const [preload, setPreload] = useState(false);
+  const [game, setGame] = useState({map: null, level: null});
 
   const generateGame = () => {
+    const currentGame = {
+      map: gameDraw.maps[Math.floor(Math.random() * gameDraw.maps.length)],
+      level:
+        gameDraw.levels[Math.floor(Math.random() * gameDraw.levels.length)],
+    };
     setPreload(true);
     setTimeout(() => {
       setShow(true);
-      setMap(Math.floor(Math.random() * 15));
-      setLevel(Math.floor(Math.random() * 4));
+      setGame(currentGame);
       setPreload(false);
     }, 1000);
   };
@@ -28,7 +31,7 @@ const Home = () => {
         ) : (
           <>
             <Logo />
-            {show && <Result map={maps[map]} level={levels[level]} />}
+            {show && <Result map={game.map} level={game.level} />}
             <Button text={'sortear'} onPress={generateGame} />
           </>
         )}
